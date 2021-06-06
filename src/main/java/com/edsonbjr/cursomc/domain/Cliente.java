@@ -30,7 +30,7 @@ public class Cliente implements Serializable{
 	private Integer tipo;
 	
 	@OneToMany(mappedBy="cliente")
-	private List<Endereco> enderecos;
+	private List<Endereco> enderecos = new ArrayList<>();
 	
 	@ElementCollection
 	@CollectionTable(name = "TELEFONE")
